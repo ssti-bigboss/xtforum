@@ -21,11 +21,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-1 col-xs-3 col-sm-2 col-md-2">
-						<a href=""><img src="./images/logo.jpg"></a>
+						<a href="index.html"><img src="./images/logo.jpg"></a>
 					</div>
 					<div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
 						<div class="dropdown">
-              <a data-toggle="dropdown" href="#">分类</a> <b class="caret"></b>
+              <a data-toggle="dropdown" href="#">类型</a> <b class="caret"></b>
               <ul class="dropdown-menu" role="menu">
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">类型1</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-2" href="#">类型2</a></li>
@@ -48,11 +48,6 @@
             </div>
 					</div>
 					<div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
-            <div class="stnt pull-left">                            
-              <form action="new_topic.html" method="post" class="form">
-                <button class="btn btn-primary">开始创建新的板块</button>
-              </form>
-            </div>
             <div class="env pull-left"><i class="material-icons">mail</i></div>
 
             <div class="avatar pull-left dropdown">
@@ -75,119 +70,96 @@
 	<section class="xtindex-main">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-xs-12 col-md-8">
-          <div class="pull-left">
-          	<a href="#" class="prevnext"><i class="material-icons">chevron_left</i></a>
-          </div>
-          <div class="pull-left">
-            <ul class="paginationforum">
-              <li class="hidden-xs"><a href="">1</a></li>
-              <li class="hidden-xs"><a href="">2</a></li>
-              <li class="hidden-xs"><a href="">3</a></li>
-              <li class="hidden-xs"><a href="">4</a></li>
-              <li><a href="">5</a></li>
-              <li><a href="">6</a></li>
-              <li><a href="" class="active">7</a></li>
-              <li><a href="">8</a></li>
-              <li class="hidden-xs"><a href="">9</a></li>
-              <li class="hidden-xs"><a href="">10</a></li>
-              <li class="hidden-xs hidden-md"><a href="">11</a></li>
-              <li class="hidden-xs hidden-md"><a href="">12</a></li>
-              <li class="hidden-xs hidden-sm hidden-md"><a href="">13</a></li>
-              <li><a href="">1586</a></li>
-            </ul>
-          </div>
-          <div class="pull-left">
-          	<a href="#" class="prevnext last"><i class="material-icons">chevron_right</i></a>
-          </div>
-          <div class="clearfix"></div>
-	      </div>
+				<div class="col-lg-8 breadcrumbf">
+          <a href="#">类型2</a>
+          <span class="diviver">&gt;</span>
+          <a href="#">新话题</a>
+        </div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8">
-					<div class="post">
-            <div class="wrap-ut pull-left">
-              <div class="userinfo pull-left">
-                <div class="avatar">
-                  <img src="./images/person.jpg" alt="">
-                  <div class="status green">&nbsp;</div>
+          <div class="post">
+            <form action="#" class="form newtopic" method="post">
+              <div class="topwrap">
+                <div class="userinfo pull-left">
+                  <div class="avatar">
+                    <img src="images/person.jpg" alt="">
+                    <div class="status green">&nbsp;</div>
+                  </div>
+                  <div class="icons">
+                    <img src="images/icon1.jpg" alt=""><img src="images/icon2.jpg" alt=""><img src="images/icon3.jpg" alt=""><img src="images/icon4.jpg" alt="">
+                  </div>
                 </div>
-
-                <div class="icons">
-                  <img src="images/icon1.jpg" alt=""><img src="images/icon2.jpg" alt="">
+                <div class="posttext pull-left">
+                  <div>
+                    <input type="text" placeholder="在这里输入你的标题" class="form-control">
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <select name="category" id="category" class="form-control">
+                        <option value="" disabled="" selected="">选择一个分类</option>
+                        <option value="op1">交流</option>
+                        <option value="op2">提问</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <select name="subcategory" id="subcategory" class="form-control">
+                        <option value="" disabled="" selected="">选择一个版块</option>
+                        <option value="op1">校园交流</option>
+                        <option value="op2">时事论坛</option>
+                        <option value="op1">体育论坛</option>
+                        <option value="op2">时事论坛</option>
+                        <option value="op2">生活论坛</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <textarea name="desc" id="desc" placeholder="在这里发表你的观点~" class="form-control"></textarea>
+                  </div>
+                  <div class="row newtopcheckbox">
+                    <div class="col-lg-6 col-md-6">
+                      <div>
+                        <p>分享到社交</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" id="fb"> <i class="fa fa-qq"></i>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" id="tw"> <i class="fa fa-weibo"></i>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" id="gp"> <i class="fa fa-renren"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="posttext pull-left">
-                <h2><a href="">华为发力年终销量冲刺：普通员工奖金可达百万元</a></h2>
-                <p>华为薪酬一直是业界及社会关注的话题，昨日，一则华为提前发年终奖的消息又引发热议。</p>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="postinfo pull-left">
-              <div class="comments">
-                <div class="commentbg">560<div class="mark"></div></div>
-              </div>
-              <div class="views"><i class="material-icons">remove_red_eye</i> 1,568</div>
-              <div class="time"><i class="material-icons">access_time</i> 24 min</div>
-            </div>
-            <div class="clearfix"></div>
-        	</div>
-        	<div class="post">
-            <div class="wrap-ut pull-left">
-              <div class="userinfo pull-left">
-                <div class="avatar">
-                  <img src="./images/person.jpg" alt="">
-                  <div class="status green">&nbsp;</div>
+                <div class="clearfix"></div>
+              </div>                              
+              <div class="postinfobot">
+                <div class="pull-right postreply">
+                  <div class="pull-left"><button type="submit" class="btn btn-primary">提交</button></div>
+                  <div class="clearfix"></div>
                 </div>
-
-                <div class="icons">
-                  <img src="images/icon1.jpg" alt=""><img src="images/icon2.jpg" alt="">
-                </div>
+                <div class="clearfix"></div>
               </div>
-              <div class="posttext pull-left">
-                <h2><a href="">华为发力年终销量冲刺：普通员工奖金可达百万元</a></h2>
-                <p>华为薪酬一直是业界及社会关注的话题，昨日，一则华为提前发年终奖的消息又引发热议。</p>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="postinfo pull-left">
-              <div class="comments">
-                <div class="commentbg">560<div class="mark"></div></div>
-              </div>
-              <div class="views"><i class="material-icons">remove_red_eye</i> 1,568</div>
-              <div class="time"><i class="material-icons">access_time</i> 24 min</div>
-            </div>
-            <div class="clearfix"></div>
-        	</div>
-        	<div class="post">
-            <div class="wrap-ut pull-left">
-              <div class="userinfo pull-left">
-                <div class="avatar">
-                  <img src="./images/person.jpg" alt="">
-                  <div class="status green">&nbsp;</div>
-                </div>
-
-                <div class="icons">
-                  <img src="images/icon1.jpg" alt=""><img src="images/icon2.jpg" alt="">
-                </div>
-              </div>
-              <div class="posttext pull-left">
-                <h2><a href="">华为发力年终销量冲刺：普通员工奖金可达百万元</a></h2>
-                <p>华为薪酬一直是业界及社会关注的话题，昨日，一则华为提前发年终奖的消息又引发热议。</p>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="postinfo pull-left">
-              <div class="comments">
-                <div class="commentbg">560<div class="mark"></div></div>
-              </div>
-              <div class="views"><i class="material-icons">remove_red_eye</i> 1,568</div>
-              <div class="time"><i class="material-icons">access_time</i> 24 min</div>
-            </div>
-            <div class="clearfix"></div>
-        	</div>
+            </form>
+          </div>
         	<div class="post">
             <div class="wrap-ut pull-left">
               <div class="userinfo pull-left">
@@ -387,7 +359,7 @@
 	<footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-1 col-xs-3 col-sm-2 logo "><a href="#"><img src="images/logo.jpg" alt=""></a></div>
+        <div class="col-lg-1 col-xs-3 col-sm-2 logo "><a href="index.html"><img src="images/logo.jpg" alt=""></a></div>
         <div class="col-lg-8 col-xs-9 col-sm-5 ">Copyrights 2014, websitename.com</div>
         <div class="col-lg-3 col-xs-12 col-sm-5 sociconcent">
           <ul class="socialicons">

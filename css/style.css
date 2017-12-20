@@ -367,3 +367,99 @@ footer ul.socialicons li {
 footer ul.socialicons li a {
     color: #bdc3c7;
 }
+
+
+.breadcrumbf a, .breadcrumbf {
+    color: #bdc3c7;
+    font-size: 12px;
+    font-family: 'Open Sans Regular', sans-serif;
+    line-height: 62px;
+}
+.newtopic input[type=text], .newtopic input[type=password] {
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 14px;
+    color: #989c9e;
+    font-family: 'Open Sans Light', sans-serif;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.newtopic select {
+    border-radius: 2px;
+    box-shadow: none;
+    border: solid 1px #cfd5d7;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #989c9e;
+    font-family: 'Open Sans Light', sans-serif;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.newtopic textarea {
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 14px;
+    color: #989c9e;
+    font-family: 'Open Sans Light', sans-serif;
+    margin-bottom: 20px;
+    height: 150px;
+}
+.checkbox .fa-qq, .fa-weibo, .fa-renren{
+    color: #989c9e;
+    font-size: 20px;
+    margin-top: 4px;
+}
+.checkbox input {
+    margin-right: 7px;
+}
+.newtopcheckbox input {
+    margin-top: 5px;
+    width: 18px;
+    height: 18px;
+}
+.postinfobot {
+    border-top: solid 1px #f1f1f1;
+    line-height: 50px;
+    padding: 0 30px 0 94px;
+}
+.postinfobot .notechbox {
+    width: 20px;
+}
+.postinfocot .notechbox input {
+    width: 12px;
+    box-shadow: none;
+    margin-top: 8px;
+    border-color: #bdc3c7;
+}
+.postinfobot label {
+    color: #bdc3c7;
+    font-size: 12px;
+    font-family: 'Open Sans Regular', sans-serif;
+}
+.post blockquote .original, .postreply {
+    font-size: 12px;
+    color: #bdc3c7;
+    display: block;
+    font-family: 'Open Sans Regular', sans-serif;
+}
+.smile a {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #bdc3c7;
+}
+.postinfobot .btn-primary {
+    background-color: #1abc9c;
+    box-shadow: none;
+    border-radius: 2px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Open Sans Bold', sans-serif;
+    border: none;
+}
