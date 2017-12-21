@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>我的账户</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="xttop">
+    <div class="xttop-banner">
+      <img src="./images/banner.jpg">
+    </div>
+    <div class="xttop-headernav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2">
+            <a href="index.html"><img src="./images/logo.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
+            <div class="dropdown">
+              <a data-toggle="dropdown" href="#">分类</a> <b class="caret"></b>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">类型1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-2" href="#">类型2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-3" href="#">类型3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 search hidden-xs hidden-sm col-md-3">
+            <div class="wrap">
+              <form action="#" method="post" class="form">
+                <div class="pull-left txt">
+                  <input type="text" class="form-control" placeholder="搜索内容">
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-default" type="button"><i class="material-icons">search</i>
+                  </button>
+                </div>
+                <div class="clearfix"></div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
+            <div class="stnt pull-left">                            
+              <form action="new_topic.html" method="post" class="form">
+                <button class="btn btn-primary">开始创建新的话题</button>
+              </form>
+            </div>
+            <div class="env pull-left"><i class="material-icons">mail</i></div>
+
+            <div class="avatar pull-left dropdown">
+              <a data-toggle="dropdown" href="#"><img src="./images/person.jpg" alt=""></a> <b class="caret"></b>
+              <div class="status green">&nbsp;</div>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">个人信息</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-2" href="#">个人设置</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-3" href="#">登出</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-4" href="04_new_account.html">创建账号</a></li>
+              </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div id="main" style="background-color: #ecf0f1;">
+            <div class="container">
+                <div class="block-header">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li class="active">个人资料</li>
+                    </ol>
+                </div>
+                <div class="myContainer">
+                    <div class="myProfile-header c-shadow" id="crop-avatar">
+                        <div class="banner"></div>
+                        <div class="avatar-view myProfile-img-div">
+                            <img src="images/person1.jpg" alt="">
+                        </div>
+                        <!--myProfile-img-div end-->
+                        <div class="myProfile-name">stforum_admin</div>
+                    </div>
+                    <!--myProfile-header end-->
+                    <div class="col-md-6 col-sm-6 pd8">
+                        <div class="card myProfile-card c-shadow">
+                            <form action="">
+                                <div class="card-header">
+                                    <h5><i class="material-icons">account_circle</i><span>信息认证</span></h5>
+                                </div>
+                                <!--card-header end-->
+                                <div class="card-body">
+                                    <p>
+                                        <label>Q Q：</label>
+                                        <span>635968628</span>
+                                    </p>
+                                    <p>
+                                        <label>手机：</label>
+                                        <span>13266800805</span>
+                                    </p>
+                                    <p>
+                                        <label>邮箱：</label>
+                                        <span>linxx0523@gamil.com</span>
+                                    </p>
+                                </div>
+                                <!--card-body end-->
+                            </form>
+                        </div>
+                        <!--card end-->
+                        <!-- 初始状态 -->
+                        <div class="card myProfile-card c-shadow">
+                            <form action="" class="form-body myProfile_validate">
+                                <div class="card-header">
+                                    <h5><i class="material-icons">account_circle</i><span>信息认证</span></h5>
+                                </div>
+                                <!--card-header end-->
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="QQ" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">Q Q：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input  class="form-control" id="QQ">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="phone" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">手机：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input class="form-control" id="phone" name="phone" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="email" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">邮箱：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input type="email" class="form-control" id="email" name="email" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                </div>
+                                <!--card-body end-->
+                                <div class="button-label">
+                                    <button type="reset" class="btn join-cancel currency-form-close">取消</button>
+                                    <button type="submit" class="btn join-party">保存</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--card end-->
+                        <!-- 修改密码 -->
+                        <div class="card myProfile-card c-shadow">
+                            <form action="" class="form-body myProfile_validate change_password">
+                                <div class="card-header">
+                                    <h5><i class="material-icons">lock_open</i><span>修改密码</span></h5>
+                                </div>
+                                <!--card-header end-->
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="old_password" class="col-md-3 col-sm-3 col-xs-3 control-label plr0 l-p-4">原密码：</label>
+                                        <div class="col-md-9 col-sm-9 col-xs-9 plr0">
+                                            <input style="display: none;">
+                                            <input type="password" class="form-control" id="old_password" name="old_password" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="new_password" class="col-md-3 col-sm-3 col-xs-3 control-label plr0 l-p-4">新密码：</label>
+                                        <div class="col-md-9 col-sm-9 col-xs-9 plr0">
+                                            <input style="display: none;">
+                                            <input type="password" class="form-control" id="new_password" name="new_password" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="confirm_password" class="col-md-3 col-sm-3 col-xs-3 control-label plr0">确认密码：</label>
+                                        <div class="col-md-9 col-sm-9 col-xs-9 plr0">
+                                            <input style="display: none;">
+                                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                </div>
+                                <!--card-body end-->
+                                <div class="button-label">
+                                    <button type="reset" class="btn join-cancel currency-form-close">取消</button>
+                                    <button type="submit" class="btn join-party">保存</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--card end-->
+                    </div>
+                    <!--col-md-6 end-->
+                    <div class="col-md-6 col-sm-6 pd8">
+                        <div class="card myProfile-card c-shadow">
+                            <form action="">
+                                <div class="card-header">
+                                    <h5><i class="material-icons">assignment</i><span>基本信息</span></h5>
+                                </div>
+                                <!--card-header end-->
+                                <div class="card-body">
+                                    <p>
+                                        <label>地址：</label>
+                                        <span>广东省深圳市龙岗区深圳技师学院</span>
+                                    </p>
+                                    <p>
+                                        <label>姓名：</label>
+                                        <span>林晓鑫</span>
+                                    </p>
+                                    <p>
+                                        <label>性别：</label>
+                                        <span>男</span>
+                                    </p>
+                                    <p>
+                                        <label>生日：</label>
+                                        <span>1998年5月23日</span>
+                                    </p>
+                                    <p>
+                                        <label>爱好：</label>
+                                        <span>学习</span>
+                                    </p>
+                                    <p>
+                                        <label>宣言：</label>
+                                        <span>我爱学习，学习使我快乐。</span>
+                                    </p>
+                                </div>
+                                <!--card-body end-->
+                            </form>
+                        </div>
+                        <!--card end-->
+                        <!-- 初始状态 -->
+                        <div class="card myProfile-card c-shadow">
+                            <form action="" class="form-body myProfile_validate">
+                                <div class="card-header">
+                                    <h5><i class="material-icons">assignment</i><span>基本信息</span></h5>
+                                </div>
+                                <!--card-header end-->
+                                <div class="card-body">
+                                    <div class="form-group row">
+                                        <label for="address" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">地址：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input type="text" class="form-control" id="address">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="name" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">姓名：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-sm-2 col-xs-2 control-label plr0">性别：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <div class="radio radio-primary col-md-3 col-sm-3 col-xs-3 plr0">
+                                                <label>
+                                                    <input type="radio" name="gender" id="gender1" value="男">男
+                                                </label>
+                                            </div>
+                                            <!--radio end-->
+                                            <div class="radio radio-primary col-md-3 col-sm-3 col-xs-3 plr0">
+                                                <label>
+                                                    <input type="radio" name="gender" id="gender2" value="女">女
+                                                </label>
+                                            </div>
+                                            <!--radio end-->
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="birth" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">生日：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input type="text" class="form-control" id="birth">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="hobby" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">爱好：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <input type="text" class="form-control" id="hobby">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                    <div class="form-group row">
+                                        <label for="sign" class="col-md-2 col-sm-2 col-xs-2 control-label plr0">宣言：</label>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 plr0">
+                                            <textarea class="form-control" rows="2" id="sign"></textarea>
+                                            <span class="help-block">个性签名</span>
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                </div>
+                                <!--card-body end-->
+                                <div class="button-label">
+                                    <button type="reset" class="btn join-cancel currency-form-close">取消</button>
+                                    <button type="submit" class="btn join-party">保存</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--card end-->
+                    </div>
+                    <!--col-md-6 end-->
+                </div>
+                <!--myContainer end-->
+            </div>
+            <!--container end-->
+            <!--change_head_img alert-->
+            <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <form class="avatar-form" action="{{url('admin/upload-logo')}}" enctype="multipart/form-data" method="post">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal" type="button">&times;</button>
+                                <h4 class="modal-title" id="avatar-modal-label">更改头像</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="avatar-body">
+                                    <div class="avatar-upload">
+                                        <input class="avatar-src" name="avatar_src" type="hidden">
+                                        <input class="avatar-data" name="avatar_data" type="hidden">
+                                        <label for="avatarInput">图片上传</label>
+                                        <input class="avatar-input" id="avatarInput" name="avatar_file" type="file">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="avatar-wrapper"></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="avatar-preview preview-lg"></div>
+                                            <div class="avatar-preview preview-md"></div>
+                                            <div class="avatar-preview preview-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row avatar-btns">
+                                        <div class="col-md-9">
+                                            <div class="btn-group">
+                                                <button class="btn" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"><i class="fa fa-undo"></i> 向左旋转</button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"><i class="fa fa-repeat"></i> 向右旋转</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button class="btn btn-success btn-block avatar-save" type="submit"><i class="fa fa-save"></i> 保存修改</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main end-->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-1 col-xs-3 col-sm-2 logo "><a href="#"><img src="images/logo.jpg" alt=""></a></div>
+              <div class="col-lg-8 col-xs-9 col-sm-5 ">Copyrights 2017-2018, xtforum</div>
+              <div class="col-lg-3 col-xs-12 col-sm-5 sociconcent">
+                <ul class="socialicons">
+                  <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                  <li><a href="#"><i class="fa fa-renren"></i></a></li>
+                  <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                  <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--footer end-->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

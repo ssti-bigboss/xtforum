@@ -18,10 +18,10 @@ img{border:0;}
 .xttop-banner{
 	max-height: 278px;
     height: 278px;
+    overflow: hidden;
 }
 .xttop-banner img{
 	width: 100%;
-	height: 100%;
 }
 .selecttopic{
 	line-height: 69px;
@@ -518,4 +518,201 @@ footer ul.socialicons li a {
     box-shadow: none;
     background-color: #f1f1f1;
     width: 100%;
+}
+.myProfile-img-div{
+    background-color: #edecec;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 120px;
+    margin: -62px auto 0;
+    width: 120px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.myProfile-img-div img{width: 100%;}
+.myProfile-img-div:hover .change-headimg,
+.myProfile-header .banner:hover .change-banner{display: block;}
+.myProfile-img-div .change-headimg{
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    line-height: 116px;
+    text-align: center;
+    display: none;
+}
+.change-banner{
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #fff !important;
+    padding: 9px 10px;
+    border-radius: 50%;
+    display: none;
+}
+.change-banner i,
+.change-headimg i{font-size: 18px;}
+.myProfile-img-div .change-headimg i{
+    color: #fff;
+    font-size: 25px;
+}
+.myProfile-header .banner{
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 140px;
+    position: relative;
+}
+.myProfile-header{
+    padding-bottom: 20px;
+    background: rgb(250, 250, 250);
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+.myProfile-name{
+    text-align: center;
+    font-size: 19px;
+    padding-top: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.87);
+}
+.myProfile-card{margin: 8px 0 0 0;}
+.myProfile-card .card-body label{
+    font-size: 13px;
+    color: #666;
+}
+.myProfile-card .card-header {
+    border-bottom: 1px solid #edecec;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.myProfile-card .card-header span{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.myProfile-card .card-header h5 i{
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #333;
+}
+.myProfile-menu{
+    top: 7px;
+    right: 16px;
+    position: absolute;
+}
+.myProfile-menu i{font-size: 18px;}
+.myProfile-menu button{
+    text-align: center;
+    padding: 3px 4px;
+}
+.myProfile-menu .dropdown-menu{min-width: 130px;}
+.myProfile-menu .dropdown-menu li a{font-size: 13px;}
+@media(max-width: 768px){
+    .myProfile-header{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .myContainer .col-md-6.col-sm-6.pd8{padding: 8px 16px;}
+}
+.myProfile-card .form-group input{
+    font-size: 13px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.myProfile-card .form-group input::-webkit-input-placeholder { /* WebKit browsers */ font-size: 13px !important;}
+.myProfile-card .form-group input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ font-size: 13px !important;}
+.myProfile-card .form-group input::-moz-placeholder { /* Mozilla Firefox 19+ */ font-size: 13px !important;}
+.myProfile-card .form-group input:-ms-input-placeholder { /* Internet Explorer 10+ */ font-size: 13px !important;}
+.myProfile-card .form-group label{
+    margin-top: 13px;
+    padding-left: 25px;
+    font-weight: normal;
+}
+.myProfile-card .form-group{
+    margin: 0;
+    padding: 0;
+}
+.myProfile-card .form-group .radio{margin: 0;}
+.myProfile-card .form-group .radio span{left: 0;}
+.myProfile-card .form-body{padding-bottom: 16px;}
+.myProfile-card .form-body .button-label,
+.myProfile-card .form-body .button-label button{margin: 0 1px;}
+.breadcrumb{
+    background: transparent;
+    margin: 0;
+    padding: 8px 20px;
+}
+.card {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.card .card-header h2 {
+    margin: 5px 0 0 0;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "微软雅黑";
+    color: #333;
+}
+.card .card-header h2 small {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 160%;
+    color: #aaa
+}
+.card .card-body{
+    padding: 23px 25px;
+    height: auto;
+}
+.party-menu{
+    position: absolute;    
+    top: 22px;
+    right: 20px;
+}
+.party-menu button{
+    padding: 4px;
+    border-radius: 50%;
+    margin: 0;
+    outline: none !important;
+}
+.party-menu i{
+    font-size: 20px;
+    color: #adadad;
+}
+.party-menu button:hover i{color: #000;}
+.party-menu .dropdown-menu{
+    left: inherit; 
+    right: 0;
+}
+.party-menu .dropdown-menu a{text-align: center;}
+.form-body .button-label{
+    margin-top: 16px;
+    text-align: right;
+    padding: 0 20px;
+}
+.myProfile-img-div img {
+    width: 100%;
+}
+.button-label .join-party{
+    padding: 6px 12px;
+    margin-bottom: 0;
+    background: #1abc9c !important;
+    font-weight: normal;
+}
+.button-label .join-party:hover{background: #2296f3 !important;}
+.form-body .button-label button.join-party {
+    color: #fff;
 }
