@@ -14,59 +14,113 @@
 <body>
 	
 	<div class="xttop">
-		<div class="xttop-banner">
-			<img src="./images/banner.jpg">
-		</div>
-		<div class="xttop-headernav">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-1 col-xs-3 col-sm-2 col-md-2">
-						<a href="index.html"><img src="./images/logo.jpg"></a>
-					</div>
-					<div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
-						<div class="dropdown">
-              <a data-toggle="dropdown" href="#">类型</a> <b class="caret"></b>
+    <div class="xttop-banner">
+      <img src="./images/banner.jpg">
+    </div>
+    <div class="xttop-headernav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2">
+            <a href="index.html"><img src="./images/logo.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
+            <div class="dropdown">
+              <a data-toggle="dropdown" href="#">分类</a> <b class="caret"></b>
               <ul class="dropdown-menu" role="menu">
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">类型1</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-2" href="#">类型2</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-3" href="#">类型3</a></li>
               </ul>
             </div>
-					</div>
-					<div class="col-lg-4 search hidden-xs hidden-sm col-md-3">
-						<div class="wrap">
+          </div>
+          <div class="col-lg-4 search hidden-xs hidden-sm col-md-3">
+            <div class="wrap">
               <form action="#" method="post" class="form">
                 <div class="pull-left txt">
-                	<input type="text" class="form-control" placeholder="搜索内容">
+                  <input type="text" class="form-control" placeholder="搜索内容">
                 </div>
                 <div class="pull-right">
-                	<button class="btn btn-default" type="button"><i class="material-icons">search</i>
-                	</button>
+                  <button class="btn btn-default" type="button"><i class="material-icons">search</i>
+                  </button>
                 </div>
                 <div class="clearfix"></div>
               </form>
             </div>
-					</div>
-					<div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
-            <div class="env pull-left"><i class="material-icons">mail</i></div>
+          </div>
+          <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
+            <div class="stnt pull-left">                            
+              
+            </div>
+            <div class="env pull-left">
+              <li class="dropdown" id="info-btn">
+                <a href="javascript:void(0);"><i class="material-icons">mail</i></a>
+                <div class="dropdown-menu dropMenu pull-right" id="info">
+                  <div class="lv-header">消息提醒</div>
+                  <div class="lv-body">
+                    <a class="lv-item" href="javascript:void(0);">
+                      <div class="media">
+                        <div class="pull-left">
+                          <img class="lv-img-sm" src="images/person.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                          <div class="lv-title">林晓鑫</div>
+                          <small class="lv-small">你的帖子写的真的是太好了。</small>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="lv-item" href="javascript:void(0);">
+                      <div class="media">
+                        <div class="pull-left">
+                          <img class="lv-img-sm" src="images/person.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                          <div class="lv-title">林金涛</div>
+                          <small class="lv-small">我的想法和你的一样哟！</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div style="overflow: hidden;"><a class="lv-footer" href="javascript:void(0);">全部已读</a></div>
+                </div>
+                <!--dropdown-menu end-->
+              </li>
+            </div>
 
             <div class="avatar pull-left dropdown">
-              <a data-toggle="dropdown" href="#"><img src="./images/person.jpg" alt=""></a> <b class="caret"></b>
-              <div class="status green">&nbsp;</div>
-              <ul class="dropdown-menu" role="menu">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">个人信息</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-2" href="#">个人设置</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-3" href="#">登出</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-4" href="04_new_account.html">创建账号</a></li>
-              </ul>
+              <li id="top-user-btn">
+                <div class="user-headimg"><img src="images/person.jpg" alt=""><b class="caret"></b></div>
+                <div class="dropdown-menu dropMenu pull-right" id="top-user">
+                  <div class="lv-header">个人信息</div>
+                  <div class="lv-body">
+                    <div class="myInfo">
+                      <div class="myphoto">
+                        <div class="userhead" data-type="update_avatar">
+                          <a href="myProfile.html" style="display:block;">
+                            <img src="images/person1.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="myshow">
+                        <div class="myname">admin</div>
+                        <div class="Email">linxx0523@gmail.com</div>
+                        <div class="signature">管理员</div>
+                        <a class="btn user-myprofile" href="myProfile.html">管理我的账户</a>
+                      </div>
+                    </div>
+                    <!--myInfo end-->
+                    <div style="overflow: hidden;"><a class="lv-footer" href="javascript:void(0);">退出</a></div>
+                  </div>
+                </div>
+                <!--dropdown-menu end-->
+              </li>
             </div>
             
             <div class="clearfix"></div>
           </div>
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+      </div>
+    </div>
+  </div>
 	<section class="xtindex-main">
 		<div class="container">
 			<div class="row">
@@ -377,5 +431,28 @@
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $("#info-btn").on("click", function(e){
+    e = e||event;
+    $("#info").toggleClass("show-info");
+    $("#info").on("click", function(e){e.stopPropagation();})
+    e.stopPropagation();
+    $(document).one("click", function(e){
+      $("#info").removeClass("show-info");
+      e.stopPropagation();
+    })
+  })
+
+  $("#top-user-btn").on("click", function(e){
+    e = e||event;
+    $("#top-user").toggleClass("show-info");
+    $("#top-user").on("click", function(e){e.stopPropagation();})
+    e.stopPropagation();
+    $(document).one("click", function(e){
+      $("#top-user").removeClass("show-info");
+      e.stopPropagation();
+    })
+  })
+  </script>
 </body>
 </html>
